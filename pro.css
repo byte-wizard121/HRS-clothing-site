@@ -1,0 +1,74 @@
+
+body {
+         background-image: url("C:/Users/wahee/OneDrive/Desktop/project/bg2.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; 
+}
+
+nav a {
+    color: #e0e0e0; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c0c0c0; 
+}
+
+
+h1, h2, h3, h4 {
+    color: #FFD700; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+p, ul {
+    color: #d3d3d3; 
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+
+ul li h4 {
+    color: #87CEEB; 
+    display: inline;
+}
+

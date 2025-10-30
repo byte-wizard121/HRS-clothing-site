@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <!--javasript-->
+    <script>
+        // Initialize the total bill amount to zero
+        let totalBill = 0;
+    
+        // Function to handle adding items to the cart
+        function addToCart(price) {
+            totalBill += price; // Increment the total bill by the item's price
+            // Update the displayed bill amount on the webpage
+            document.getElementById("bill-amount").innerText = `PKR ${totalBill}`;
+            // Notify the user that an item has been added
+            alert("You added one item");
+        }
+    
+        // Function to handle the checkout process
+        function checkout() {
+            // Check if the cart is empty
+            if (totalBill === 0) {
+                // Alert the user that the cart is empty
+                alert("Your cart is empty! Please add items to proceed.");
+            } else {
+                // Confirm with the user if they want to proceed with the total bill
+                const confirmation = confirm(`Your total bill is PKR ${totalBill}. Do you want to checkout?`);
+                if (confirmation) { 
+                    // If the user confirms, thank them for their purchase
+                    alert("Thank you for your purchase!");
+                    totalBill = 0; // Reset the total bill to zero after checkout
+                    // Update the displayed bill amount to zero
+                    document.getElementById("bill-amount").innerText = `PKR 0`;
+                }
+            }
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            
+            <div class="nav-search">
+                <input placeholder="search here" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-signin border" >
+                <a href = "login.html">
+                    <p class="nav-first">Hello, sign in</p>
+                <p class="nav-second">Account & Lists</p></a>
+            </div>
+
+            
+            <div class="nav-card border">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+            
+        </div>
+        <div class="panel">
+           
+        
+        <div class="panel-options">
+            
+            <a href="index.html"><p>Home</p></a> 
+            <a href="limited_edition.html"><p>Limited Edition</p></a> 
+            <a href="men.html"><p>Men</p></a> 
+            <a href="women.html"><p>Women</p></a> 
+            <a href="kid.html"><p>Kid</p></a>  
+            <a href="contact.html"><p>Contact Us</p></a>
+        </div>
+        
+        </div> 
+    </header>
+
+    
+
+    </div>
+
+    <!--for women 1-4-->
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h3>3 Piece Chiffon Embroidered Suit IUSTKSD-173
+                </h3>
+                <div class="box-image" style="background-image: url('women_1.webp');"></div>
+                <p>7,567 PKR</p>
+                <button class="buton" onclick="addToCart(7567)">Add to cart</button>
+            </div>
+            
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h3>Lawn Gold Printed Shirt IUSTK-262
+                </h3>
+                <div class="box-image" style="background-image: url('women_2.webp');"></div>
+                <p>5,908 PKR</p>
+                <button class="buton" onclick="addToCart(5908)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h3>Jacquard Printed Shirt And Lawn Lacquer</h3>
+                <div class="box-image" style="background-image: url('women_3.webp');"></div>
+                <p>6,780 PKR</p>
+                <button class="buton" onclick="addToCart(6780)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h3>3 Piece Lawn Gold And Lacquer Printed Suit </h3>
+                <div class="box-image" style="background-image: url('women_4.webp');"></div>
+                <p>8,765 PKR</p>
+                <button class="buton" onclick="addToCart(8765)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--for women 5-8-->
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h3>2 Piece Unstitched Printed Karandi Suit WNST-42006
+                </h3>
+                <div class="box-image" style="background-image: url('women_5.webp');"></div>
+                <p>5,432 PKR</p>
+                <button class="buton" onclick="addToCart(5432)">Add to cart</button>
+            </div>
+            
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h3>2 Piece Unstitched Printed Karandi Suit WNST-42018
+                </h3>
+                <div class="box-image" style="background-image: url('women_6.webp');"></div>
+                <p>8,999 PKR</p>
+                <button class="buton" onclick="addToCart(8999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h3>2 Piece Unstitched Printed Cotail Suit WNST-42007
+                </h3>
+                <div class="box-image" style="background-image: url('women_7.webp');"></div>
+                <p>9,999 PKR</p>
+                <button class="buton" onclick="addToCart(9999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h3>2 Piece Unstitched Printed Linen Suit WNST-42011
+                </h3>
+                <div class="box-image" style="background-image: url('women_8.webp');"></div>
+                <p>6,500 PKR</p>
+                <button class="buton" onclick="addToCart(6500)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--for women 9-12-->
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h3>Studio Collection Jump Suit WGK-CGS-DY-2200   
+                </h3>
+                <div class="box-image" style="background-image: url('Women_9.webp');"></div>
+                <p>8,900 PKR</p>
+                <button class="buton" onclick="addToCart(8900)">Add to cart</button>
+            </div>
+            
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h3>Blouse WM-CS-SS24-079
+                </h3>
+                <div class="box-image" style="background-image: url('women_10.webp');"></div>
+                <p>7,500 PKR</p>
+                <button class="buton" onclick="addToCart(7500)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h3>Black Basic Cropped Knit Sweater 224-216-305</h3>
+                <div class="box-image" style="background-image: url('women_11.webp');"></div>
+                <p>6,987 PKR</p>
+                <button class="buton" onclick="addToCart(6987)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h3>Yarn Dyed Cotton Shirt GLS-24-128
+                </h3>
+                <div class="box-image" style="background-image: url('women_12.webp');"></div>
+                <p>8,650 PKR</p>
+                <button class="buton" onclick="addToCart(8650)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--for women 13-16-->
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h3>Khaddar Embellished Shirt And Trouser IPST-44300
+                </h3>
+                <div class="box-image" style="background-image: url('women_13.webp');"></div>
+                <p>9,765 PKR</p>
+                <button class="buton" onclick="addToCart(9765)">Add to cart</button>
+            </div>
+            
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h3>Khaddar Embellished Shirt And Trouser IPST-44299
+                </h3>
+                <div class="box-image" style="background-image: url('women_14.webp');"></div>
+                <p>7,999 PKR</p>
+                <button class="buton" onclick="addToCart(7999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h3>Khaddar Embellished Shirt And Trouser IPST-44297
+                </h3>
+                <div class="box-image" style="background-image: url('women_15.webp');"></div>
+                <p>6,399 PKR</p>
+                <button class="buton" onclick="addToCart(6399)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h3>Khaddar Embellished Shirt And Trouser IPST-44296</h3>
+                <div class="box-image" style="background-image: url('women_16.webp');"></div>
+                <p>7,808 PKR</p>
+                <button class="buton" onclick="addToCart(7808)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--function call-->
+
+    <div id="bill">
+        <strong>Total Bill: <span id="bill-amount">PKR 0</span></strong>
+        <button id="checkout-btn" onclick="checkout()">Checkout</button>
+</div>
+
+    
+    <!--footer-->
+    <footer>
+        <div class="foot-panel1">
+            <ul>
+                <h2>ABOUT FASHION SHOP</h2>
+                <a>About Us</a>
+                <a>COMPANY</a>
+                <a>CAREERS</a>
+                <a>STORE LOCATION</a>
+                <a>BLOG</a>
+            </ul>
+
+            <ul>
+                <h2>MY ACCOUNT</h2>
+                <a>LOGIN</a>
+                <a>CREATE ACCOUNT</a>
+                <a>ORDER HISTORY</a>
+                <a>STATUS</a>
+    
+            </ul>
+
+            <ul>
+                <h2>CUSTOMER CARE</h2>
+                <a>FAQ</a>
+                <a>CONTACT US</a>
+                <a>PRIVACY POLICY</a>
+                <a>SHIPPING POLICY</a>
+                <a>CUSTOMER FEEDBACK</a>
+                <a>REQUEST A CALL</a>
+                <a>COMPLAINT/INQUIRY FORM</a>
+                <a>RETURN & EXCHANGE POLICY</a>
+                
+
+            </ul>
+
+            <ul>
+                <h2>FIND US ON</h2>
+                <a>FACEBOOK</a>
+                <a>INSTAGRAM</a>
+                <a>TWITTER</a>
+                <a>YOUTUBE</a>
+                <a>TIKTOK</a>
+                <a>WHATSAPP</a>
+
+            </ul>
+        </div>
+
+         <!--search bar function-->
+         <script>
+            document.querySelector('.search-icon').addEventListener('click', function () {
+                const searchTerm = document.querySelector('.search-input').value.toLowerCase().trim();
+        
+                // Mapping search terms to page URLs
+                const pageMapping = {
+                    home: "index.html",
+                    "limited edition": "limited_edition.html",
+                    men: "men.html",
+                    women: "women.html",
+                    kid: "kid.html",
+                    "contact us": "contact.html"
+                };
+        
+                // Check if search term matches a predefined page
+                if (pageMapping[searchTerm]) {
+                    window.location.href = pageMapping[searchTerm];
+                } else {
+                    alert("No matching page found. Please search for Home, Limited Edition, Men, Women, Kid, or Contact Us.");
+                }
+            });
+        
+            // Optional: Add "Enter" key functionality
+            document.querySelector('.search-input').addEventListener('keypress', function (event) {
+                if (event.key === 'Enter') {
+                    document.querySelector('.search-icon').click();
+                }
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>
