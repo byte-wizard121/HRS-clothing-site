@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The DOCTYPE declaration defines the document type and version of HTML -->
+
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive behavior on different devices -->
+
+    <title>Men's Fashion</title> <!-- Sets the title of the webpage -->
+
+    <!-- Links to external styles and Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css"> <!-- Custom CSS for styling the webpage -->
+</head>
+<body>
+    <!-- Header section for navigation and branding -->
+    <header>
+        <div class="navbar"> <!-- Navigation bar -->
+
+            <div class="nav-logo border"> <!-- Logo section -->
+
+                <div class="logo"></div> <!-- Placeholder for the logo -->
+            </div>
+
+             
+
+            <div class="nav-search"> <!-- Search bar section -->
+                <input placeholder="search here" class="search-input"> <!-- Input field for search -->
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i> <!-- Font Awesome search icon -->
+                </div>
+            </div>
+          
+            <div class="nav-signin border"> <!-- Sign-in section -->
+
+                <a href="login.html"> <!-- Link to the login page -->
+                    <p class="nav-first">Hello, sign in</p>
+                    <p class="nav-second">Account & Lists</p>
+                </a>
+            </div>
+
+            <div class="nav-card border"> <!-- Shopping cart section -->
+                
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i> <!-- Font Awesome cart icon -->
+                Cart
+            </div>
+        </div>
+
+        <!-- Navigation panel with links to other sections -->
+        <div class="panel">
+            <div class="panel-options">
+                <a href="index.html"><p>Home</p></a>
+                <a href="limited_edition.html"><p>Limited Edition</p></a>
+                <a href="men.html"><p>Men</p></a>
+                <a href="women.html"><p>Women</p></a>
+                <a href="kid.html"><p>Kid</p></a>
+                <a href="contact.html"><p>Contact Us</p></a>
+            </div>
+        </div> 
+    </header>
+
+    <!-- Hero sections for promotional content -->
+    <div class="hero-section1"></div>
+    <div class="hero-section2"></div>
+    <div class="hero-section3"></div>
+    <div class="hero-section4"></div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="foot-panel1"> <!-- Footer links grouped into categories -->
+            <ul>
+                <h2>ABOUT FASHION SHOP</h2>
+                <a>About Us</a>
+                <a>COMPANY</a>
+                <a>CAREERS</a>
+                <a>STORE LOCATION</a>
+                <a>BLOG</a>
+            </ul>
+            <ul>
+                <h2>MY ACCOUNT</h2>
+                <a>LOGIN</a>
+                <a>CREATE ACCOUNT</a>
+                <a>ORDER HISTORY</a>
+                <a>STATUS</a>
+            </ul>
+            <ul>
+                <h2>CUSTOMER CARE</h2>
+                <a>FAQ</a>
+                <a>CONTACT US</a>
+                <a>PRIVACY POLICY</a>
+                <a>SHIPPING POLICY</a>
+                <a>CUSTOMER FEEDBACK</a>
+                <a>REQUEST A CALL</a>
+                <a>COMPLAINT/INQUIRY FORM</a>
+                <a>RETURN & EXCHANGE POLICY</a>
+            </ul>
+            <ul>
+                <h2>FIND US ON</h2>
+                <a>FACEBOOK</a>
+                <a>INSTAGRAM</a>
+                <a>TWITTER</a>
+                <a>YOUTUBE</a>
+                <a>TIKTOK</a>
+                <a>WHATSAPP</a>
+            </ul>
+        </div>
+
+        <!-- JavaScript for search bar functionality -->
+        <script>
+            document.querySelector('.search-icon').addEventListener('click', function () {
+                const searchTerm = document.querySelector('.search-input').value.toLowerCase().trim(); // Get the input value
+
+                // Map search terms to their corresponding pages
+                const pageMapping = {
+                    home: "index.html",
+                    "limited edition": "limited_edition.html",
+                    men: "men.html",
+                    women: "women.html",
+                    kid: "kid.html",
+                    "contact us": "contact.html"
+                };
+
+                // Navigate to the matched page or show an alert if no match is found
+                if (pageMapping[searchTerm]) {
+                    window.location.href = pageMapping[searchTerm];
+                } else {
+                    alert("No matching page found. Please search for Home, Limited Edition, Men, Women, Kid, or Contact Us.");
+                }
+            });
+
+            // Add functionality to trigger search when Enter key is pressed
+            document.querySelector('.search-input').addEventListener('keypress', function (event) {
+                if (event.key === 'Enter') {
+                    document.querySelector('.search-icon').click();
+                }
+            });
+        </script>
+    </footer>
+</body>
+</html>

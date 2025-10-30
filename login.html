@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specify the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Ensure proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document displayed in the browser tab -->
+    <title>Document</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to an external CSS file for styling the page -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Wrapper to contain and style the login form -->
+    <div class="wrapper">
+        <!-- Login form with GET method that redirects to the index.html page -->
+        <form action="index.html" method="get">
+            <!-- Heading of the login form -->
+            <h1>Login</h1>
+
+            <!-- Input field for the username -->
+            <div class="input-box">
+                <input type="text" placeholder="Username" required> <!-- Username input field with a placeholder -->
+                <i class="fa-solid fa-user"></i> <!-- Font Awesome user icon -->
+            </div>
+
+            <!-- Input field for the password -->
+            <div class="input-box">
+                <input type="password" placeholder="Password" required> <!-- Password input field with a placeholder -->
+                <i class="fa-solid fa-lock"></i> <!-- Font Awesome lock icon -->
+            </div>
+
+            <!-- Section for "Remember Me" checkbox and "Forget Password" link -->
+            <div class="remember">
+                <label>
+                    <input type="checkbox"> Remember me <!-- Checkbox to remember the user -->
+                </label>
+                <a href="#">Forget password?</a> <!-- Link to reset password -->
+            </div>
+
+            <!-- Submit button to log in -->
+            <button class="btn" type="submit">Login</button>
+
+            <!-- Section for users who don't have an account -->
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p> <!-- Link to registration page -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>

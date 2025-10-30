@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Initialize the total bill amount to zero
+        let totalBill = 0;
+    
+        // Function to handle adding items to the cart
+        function addToCart(price) {
+            totalBill += price; // Increment the total bill by the item's price
+            // Update the displayed bill amount on the webpage
+            document.getElementById("bill-amount").innerText = `PKR ${totalBill}`;
+            // Notify the user that an item has been added
+            alert("You added one item");
+        }
+    
+        // Function to handle the checkout process
+        function checkout() {
+            // Check if the cart is empty
+            if (totalBill === 0) {
+                // Alert the user that the cart is empty
+                alert("Your cart is empty! Please add items to proceed.");
+            } else {
+                // Confirm with the user if they want to proceed with the total bill
+                const confirmation = confirm(`Your total bill is PKR ${totalBill}. Do you want to checkout?`);
+                if (confirmation) { 
+                    // If the user confirms, thank them for their purchase
+                    alert("Thank you for your purchase!");
+                    totalBill = 0; // Reset the total bill to zero after checkout
+                    // Update the displayed bill amount to zero
+                    document.getElementById("bill-amount").innerText = `PKR 0`;
+                }
+            }
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            
+            <div class="nav-search">
+                <input placeholder="search here" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-signin border" >
+                <a href = "login.html">
+                    <p class="nav-first">Hello, sign in</p>
+                <p class="nav-second">Account & Lists</p></a>
+            </div>
+
+            
+            <div class="nav-card border">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+            
+        </div>
+        <div class="panel">
+        
+        <div class="panel-options">
+            <a href="index.html"><p>Home</p></a> 
+            <a href="limited_edition.html"><p>Limited Edition</p></a> 
+            <a href="men.html"><p>Men</p></a> 
+            <a href="women.html"><p>Women</p></a> 
+            <a href="kid.html"><p>Kid</p></a>  
+            <a href="contact.html"><p>Contact Us</p></a>
+        </div>
+       
+        </div> 
+    </header>
+
+    
+
+    </div>
+
+    <!--for men 1-4-->
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h3>Shahi Latha Unstitched Fabric Cotton-LF</h3>
+                <div class="box-image" style="background-image: url('kid01.webp');"></div>
+                <p>8,500 PKR</p>
+                <button class="buton" onclick="addToCart(8500)">Add to cart</button>
+            </div>
+            
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h3>Century 100 Latha Unstitched Fabric Cotton-LF</h3>
+                <div class="box-image" style="background-image: url('kid02.webp');"></div>
+                <p>7,800 PKR</p>
+                <button class="buton" onclick="addToCart(7800)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h3>Horizon Latha Unstitched Fabric Cotton</h3>
+                <div class="box-image" style="background-image: url('kid03.webp');"></div>
+                <p>8,500 PKR</p>
+                <button class="buton" onclick="addToCart(8500)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h3>Titanium Latha Unstitched Fabric Cotton-LF-2</h3>
+                <div class="box-image" style="background-image: url('kid04.webp');"></div>
+                <p>6,700 PKR</p>
+                <button class="buton" onclick="addToCart(6700)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--for men 5-8-->
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h3>Bannu Blended Woolen Shawl with Gift Box BWS 1</h3>
+                <div class="box-image" style="background-image: url('kid05.webp');"></div>
+                <p>7,900 PKR</p>
+                <button class="buton" onclick="addToCart(7900)">Add to cart</button>
+            </div>
+            
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h3>Bannu Blended Woolen Shawl with Gift Box BWS 2</h3>
+                <div class="box-image" style="background-image: url('kid06.webp');"></div>
+                <p>7,800 PKR</p>
+                <button class="buton" onclick="addToCart(7800)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h3>Pashmina Blended Shawl with Gift Box SPS 1</h3>
+                <div class="box-image" style="background-image: url('kid07.webp');"></div>
+                <p>7,999 PKR</p>
+                <button class="buton" onclick="addToCart(7999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h3>Blended Acrylic Shawl with Gift Box SGZ 1</h3>
+                <div class="box-image" style="background-image: url('kid08.webp');"></div>
+                <p>5,999 PKR</p>
+                <button class="buton" onclick="addToCart(5999)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--for men 9-12-->
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h3>Light Green Non-Denim Overshirt 224-117-016</h3>
+                <div class="box-image" style="background-image: url('kid09.webp');"></div>
+                <p>6,999 PKR</p>
+                <button class="buton" onclick="addToCart(6999)">Add to cart</button>
+            </div>
+            
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h3>Jacket MN-JKT-WS24-067</h3>
+                <div class="box-image" style="background-image: url('kid10.webp');"></div>
+                <p>7,658 PKR</p>
+                <button class="buton" onclick="addToCart(7658)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h3>Bomber Jacket MN-JKT-WS24-030</h3>
+                <div class="box-image" style="background-image: url('kid11.webp');"></div>
+                <p>5,678 PKR</p>
+                <button class="buton" onclick="addToCart(5678)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h3>Non-Denim Overshirt 224-117-016</h3>
+                <div class="box-image" style="background-image: url('kid12.webp');"></div>
+                <p>1000 PKR</p>
+                <button class="buton" onclick="addToCart(1000)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--for men 13-16-->
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h3>Blue Basic Jacket MN-JKT-WS23-063</h3>
+                <div class="box-image" style="background-image: url('kid13.webp');"></div>
+                <p>9,000 PKR</p>
+                <button class="buton" onclick="addToCart(9000)">Add to cart</button>
+            </div>
+            
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h3>Denim Jacket MN-JKT-WS24-070</h3>
+                <div class="box-image" style="background-image: url('kid14.webp');"></div>
+                <p>7,500 PKR</p>
+                <button class="buton" onclick="addToCart(7500)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h3>Knitted Jacket MN-KNJ-WS24-451</h3>
+                <div class="box-image" style="background-image: url('kid15.webp');"></div>
+                <p>6,999 PKR</p>
+                <button class="buton" onclick="addToCart(6999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h3>Pashmina Blended Shawl with Gift Box SPS 1</h3>
+                <div class="box-image" style="background-image: url('kid16.webp');"></div>
+                <p>7,500 PKR</p>
+                <button class="buton" onclick="addToCart(7500)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="bill">
+        <strong>Total Bill: <span id="bill-amount">PKR 0</span></strong>
+        <button id="checkout-btn" onclick="checkout()">Checkout</button>
+</div>
+    
+    <!--footer-->
+    <footer>
+        <div class="foot-panel1">
+            <ul>
+                <h2>ABOUT FASHION SHOP</h2>
+                <a>About Us</a>
+                <a>COMPANY</a>
+                <a>CAREERS</a>
+                <a>STORE LOCATION</a>
+                <a>BLOG</a>
+            </ul>
+
+            <ul>
+                <h2>MY ACCOUNT</h2>
+                <a>LOGIN</a>
+                <a>CREATE ACCOUNT</a>
+                <a>ORDER HISTORY</a>
+                <a>STATUS</a>
+    
+            </ul>
+
+            <ul>
+                <h2>CUSTOMER CARE</h2>
+                <a>FAQ</a>
+                <a>CONTACT US</a>
+                <a>PRIVACY POLICY</a>
+                <a>SHIPPING POLICY</a>
+                <a>CUSTOMER FEEDBACK</a>
+                <a>REQUEST A CALL</a>
+                <a>COMPLAINT/INQUIRY FORM</a>
+                <a>RETURN & EXCHANGE POLICY</a>
+                
+
+            </ul>
+
+            <ul>
+                <h2>FIND US ON</h2>
+                <a>FACEBOOK</a>
+                <a>INSTAGRAM</a>
+                <a>TWITTER</a>
+                <a>YOUTUBE</a>
+                <a>TIKTOK</a>
+                <a>WHATSAPP</a>
+
+            </ul>
+        </div>
+
+         <!--search bar function-->
+         <script>
+            document.querySelector('.search-icon').addEventListener('click', function () {
+                const searchTerm = document.querySelector('.search-input').value.toLowerCase().trim();
+        
+                // Mapping search terms to page URLs
+                const pageMapping = {
+                    home: "index.html",
+                    "limited edition": "limited_edition.html",
+                    men: "men.html",
+                    women: "women.html",
+                    kid: "kid.html",
+                    "contact us": "contact.html"
+                };
+        
+                // Check if search term matches a predefined page
+                if (pageMapping[searchTerm]) {
+                    window.location.href = pageMapping[searchTerm];
+                } else {
+                    alert("No matching page found. Please search for Home, Limited Edition, Men, Women, Kid, or Contact Us.");
+                }
+            });
+        
+            // Optional: Add "Enter" key functionality
+            document.querySelector('.search-input').addEventListener('keypress', function (event) {
+                if (event.key === 'Enter') {
+                    document.querySelector('.search-icon').click();
+                }
+            });
+        </script>
+
+
+
+    </footer>
+    
+</body>
+</html>

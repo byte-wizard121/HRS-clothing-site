@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    border:border-box;
+}
+
+.navbar{
+    
+    height:90px;
+    background-color:#434e63;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    
+}
+
+.nav-logo{
+    height:50px;
+    width: 50px;
+}
+
+.logo{
+    background-image:url("HRS.png");
+    background-size:cover;
+    height:60px;
+    width:60px;
+    border-radius: 100px;
+}
+
+.border{
+    border:2px solid transparent;
+}
+
+.border:hover{
+    border: 1.2px solid rgb(180, 147, 92);
+}
+
+/** box2 **/
+
+
+.add-icon {
+    display:flex;
+    align-items :center;
+}
+
+/** box3 **/
+.nav-search{
+    margin-left: 30px;
+    display:flex;
+    justify-content: space-evenly;
+    width: 620px;
+    height: 45px;
+
+}
+.search-select{
+    background-color:aliceblue;
+    width:50px;
+    text-align:center;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size:1rem;
+    border-radius: 10px;
+}
+
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(227, 227, 15);
+    color: rgb(20, 5, 5);
+    border-radius: 10px;
+}
+
+input::placeholder{
+    padding-left: 30px;
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+/** box4 **/
+
+.nav-second , .nav-first  {
+    font-size:0.85rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+
+}
+
+/** box6 **/
+.nav-card i{
+    font-size:30px;
+}
+
+.nav-card{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/** panel **/
+.panel{
+    height:40px;
+    background-color: black;
+    display: flex;
+    color:white;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.panel-options p{
+    display:inline;
+    margin-left:16px;
+    text-decoration: none;
+    color: white;
+    border-style: bold;
+    padding-left: 60px;
+}
+
+.panel-options{
+    width:70%;
+    font-size:0.85rem;
+}
+
+
+/** hero section **/
+.hero-section1{
+    background-image: url("hero-image.png");
+    
+    background-size:cover;
+    height:700px;
+}
+
+.hero-section2{
+    background-image: url("heroimage2.jpg");
+    
+    background-size:cover;
+    height:700px;
+    margin-top: 20px;
+}
+
+.hero-section3{
+    background-image: url("heroimage3.jpg");
+    
+    background-size:cover;
+    height:700px;
+    margin-top: 20px;
+}
+
+.hero-section4{
+    background-image: url("heroimage4.jpg");
+    
+    background-size:cover;
+    height:700px;
+    margin-top: 20px;
+}
+
+/** shop section **/
+
+.shop-section{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    
+}
+
+.box{
+    
+    height:450px;
+    width: 23%;
+    background-color: white;
+    padding:20px 0px 15px;
+    margin-top: 35px;
+    
+}
+
+.box-image{
+    height:330px;
+    background-size: cover;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right:1rem;
+}
+
+/** FOOTER **/
+footer{
+    margin-top:25px;
+    background-color:black;
+    color:white;
+    height:500px;
+}
+
+ul a{
+    display:flex;
+    margin-top:20px;
+}
+
+.foot-panel1{
+    display : flex;
+    justify-content:space-evenly;
+}
+
+h2{
+    margin-top:30px;
+    color:rgb(139, 136, 136);
+}
+#bill {
+    margin-top: 35px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 18px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#bill strong {
+    font-size: 24px;
+    color: orange;
+}
+
+#checkout-btn {
+    margin-left: 18px;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    background-color: orange;
+   color:white;
+}
+#bill-amount{
+    color: orange;
+    font-size: 24px;
+}
+
+.buton{
+    border-radius: 50px;
+    background-color:rgb(188, 133, 133);
+}
